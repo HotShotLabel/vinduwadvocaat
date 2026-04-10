@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>VindUwAdvocaat</title>
+</head>
+<body>
+
+  <h1>Vind de juiste advocaat</h1>
+  <p>Wij verbinden u met de beste advocaat in Nederland</p>
+
+  <form action="https://formspree.io/f/your-id" method="POST">
+    
+    <input type="text" name="naam" placeholder="Naam" required><br><br>
+    
+    <input type="email" name="email" placeholder="Email" required><br><br>
+
+    <select name="rechtsgebied" required>
+      <option value="">Kies rechtsgebied</option>
+      <option>Strafrecht</option>
+      <option>Arbeidsrecht</option>
+      <option>Bestuursrecht</option>
+      <option>Familierecht</option>
+    </select><br><br>
+
+    <textarea name="bericht" placeholder="Beschrijf uw probleem"></textarea><br><br>
+
+    <button type="submit">Verstuur aanvraag</button>
+
+  </form>
+
+</body>
+</html>
