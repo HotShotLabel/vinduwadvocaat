@@ -1,33 +1,143 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>VindUwAdvocaat</title>
+<meta charset="UTF-8">
+<title>VindUwAdvocaat</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f7fb;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 60px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  padding: 40px;
+  margin-top: 40px;
+}
+</style>
+
 </head>
+
 <body>
 
-  <h1>Vind de juiste advocaat</h1>
-  <p>Wij verbinden u met de beste advocaat in Nederland</p>
+<header>
+  <div class="logo">VindUwAdvocaat</div>
+  <a class="btn">Gratis aanvragen</a>
+</header>
+
+<div class="hero container">
+  <h1>Vind de juiste advocaat in Nederland</h1>
+  <p>Snel, eenvoudig en professioneel gekoppeld aan de juiste specialist.</p>
+  <a class="btn">Start uw aanvraag</a>
+</div>
+
+<div class="container steps">
+  <div class="step">
+    <h3>1. Beschrijf uw situatie</h3>
+    <p>Vertel ons uw probleem</p>
+  </div>
+  <div class="step">
+    <h3>2. Wij zoeken een match</h3>
+    <p>Wij vinden de juiste advocaat</p>
+  </div>
+  <div class="step">
+    <h3>3. Match gevonden</h3>
+    <p>U wordt gekoppeld</p>
+  </div>
+</div>
+
+<div class="container form-box">
+  <h2>Dien uw aanvraag in</h2>
 
   <form action="https://formspree.io/f/your-id" method="POST">
-    
-    <input type="text" name="naam" placeholder="Naam" required><br><br>
-    
-    <input type="email" name="email" placeholder="Email" required><br><br>
+    <input type="text" placeholder="Naam" required>
+    <input type="email" placeholder="Email" required>
 
-    <select name="rechtsgebied" required>
-      <option value="">Kies rechtsgebied</option>
+    <select required>
+      <option>Rechtsgebied</option>
       <option>Strafrecht</option>
       <option>Arbeidsrecht</option>
-      <option>Bestuursrecht</option>
-      <option>Familierecht</option>
-    </select><br><br>
+    </select>
 
-    <textarea name="bericht" placeholder="Beschrijf uw probleem"></textarea><br><br>
+    <textarea placeholder="Beschrijf uw probleem"></textarea>
 
-    <button type="submit">Verstuur aanvraag</button>
-
+    <button type="submit">Aanvraag indienen</button>
   </form>
+</div>
+
+<footer>
+  <p>© 2026 VindUwAdvocaat</p>
+</footer>
 
 </body>
 </html>
