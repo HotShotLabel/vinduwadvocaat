@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <title>VindtUwAdvocaat Intake</title>
+</head>
+<body>
+  <!-- This file exists only so Netlify registers the form at build time. -->
+  <!-- It is never shown to users. -->
+  <form name="rechtconnect-intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="rechtconnect-intake" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <select name="rechtsgebied">
+      <option value="Strafrecht">Strafrecht</option>
+      <option value="Bestuursrecht">Bestuursrecht</option>
+      <option value="Arbeidsrecht">Arbeidsrecht</option>
+      <option value="Familierecht">Familierecht</option>
+      <option value="Civiel recht">Civiel recht</option>
+      <option value="Ondernemingsrecht">Ondernemingsrecht</option>
+      <option value="Belastingrecht">Belastingrecht</option>
+      <option value="Huurrecht">Huurrecht</option>
+      <option value="Immigratierecht">Immigratierecht</option>
+      <option value="Anders">Anders</option>
+    </select>
+    <textarea name="beschrijving"></textarea>
+    <input type="text" name="bot-field" />
+  </form>
+</body>
+</html>
